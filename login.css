@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 24px 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(88, 88, 88, 0.5);
+}
+
+header .logo {
+    font-size: 1rem;
+    color: #000;
+    font-weight: bolder;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+header .logo span:hover {
+    color: var(--pink);
+}
+
+header .navbar1 {
+    display: flex;
+}
+
+header .navbar1 a {
+    font-size: 1rem;
+    padding: 0 2rem;
+    color: #666;
+    text-decoration: none;
+}
+
+header .navbar1 a:hover {
+    color: var(--pink);
+}
+
+header .icons a {
+    font-size: 1rem;
+    color: #333;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+header .icons a:hover {
+    color: var(--pink);
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* ou toute autre largeur souhaitée */
+    margin: auto;
+    margin-top: 100px; 
+}
+
+.row{
+    width: 100%; /* ou un pourcentage ou une taille fixe */
+    max-width: 1200px;
+    padding: 15px; /* Pour espacement interne */
+    background: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px;
+}
+.login img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 700px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.picture {
+  display: flex;
+  justify-content: center;
+  background: #E5E5E5;
+  border-radius: 23px;
+}
+.login-center {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.login h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 20px; /* Ajuste l'espace entre l'image et le titre */
+    font-family: "Pacifico", cursive;
+    margin-bottom: -50px;
+      
+}
+.inp{
+        height: 50px;
+        width: 500px;
+        border: none;
+        outline: none;
+        border-radius: 60px;
+        box-shadow: -1px 1px 30px -11px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 1px 30px -11px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 1px 30px -11px rgba(0, 0, 0, 0.75);
+        margin-bottom: 20px; /* Espace de 20px entre les champs */
+
+}
+.btn1 {
+    width: 200px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff; /* Couleur du texte */
+    background-color: #b76535; /* Couleur de fond */
+    border: none;
+    border-radius: 30px; /* Bords arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Animation lors du survol */
+  }
+  
+  .btn1:hover {
+    background-color: #aa5f33; /* Couleur de fond au survol */
+    color: #fff;
+  }
+  
+/* Footer Styles */
+.footer {
+    background-color: #ffffff;
+    color: white;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #b76535;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #b76535;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
