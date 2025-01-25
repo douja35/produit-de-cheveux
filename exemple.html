@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>notes</h1>
+    <label for="inputValue">Entrez ta note :</label>
+  <input type="number" id="inputValue" placeholder="Entrez la note">
+  <button onclick="checkValue()">Vérifier</button>
+
+  <p id="result"></p>
+<script> 
+    
+        function checkValue() {
+          const input = document.getElementById("inputValue").value;
+          const result = document.getElementById("result");
+    
+    
+         const note = parseFloat(input);
+    
+          if ( 16<= note && note<=20) {
+            result.textContent = " tres bien.";
+          } else if( 14<= note && note<=16) {
+            result.textContent = "bien.";
+          } else if ( 12<= note && note<=14){
+          result.textContent = "assez bien.";
+          } else if ( 10<= note && note<=12){
+         result.textContent = "passable.";
+          }
+        }
+</script>
+</body>
+</html>

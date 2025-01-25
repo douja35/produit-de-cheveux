@@ -190,4 +190,91 @@ header .icons a:hover {
     margin-top: 20px;
     font-size: 14px;
   }
-  
+
+
+/* Styles pour les téléphones */
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header .logo {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0; /* Supprime le décalage vers le haut */
+        padding: 0.3rem;
+    }
+
+    .navbar1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar1 a {
+        padding: 1rem 0; /* Espacement réduit pour les liens */
+    }
+
+    header .icons {
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .container {
+        margin-top: 150px;
+        padding: 15px;
+    }
+
+    .row {
+        display: flex; /* Maintenir les colonnes côte à côte */
+        flex-direction: row; /* Alignement en ligne */
+        flex-wrap: wrap; /* Permet de passer sur plusieurs lignes si nécessaire */
+        align-items: center; /* Centrer verticalement */
+        margin: 0 auto;
+    }
+
+    .login img {
+        width: 100%; /* Prend 45% de la largeur de l'écran */
+        height: 500px;
+        border-radius: 15px; /* Coins arrondis adaptés */
+    }
+
+    .login-center {
+        width: 55%; /* Prend 55% de la largeur de l'écran */
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .animate__animated.animate__bounce { /* Ajout d'un point entre les classes */
+        margin-bottom: 20px;
+    }
+    .inp {
+        width: 100%; /* Adapte les champs au téléphone */
+        height: 45px;
+    }
+
+    .btn1 {
+        width: 100%; /* Bouton pleine largeur */
+        padding: 12px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}

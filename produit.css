@@ -48,7 +48,7 @@ header .navbar1 a {
 }
 
 header .navbar1 a:hover {
-    color: var(--pink);
+    color:#b76535;
 }
 
 header .icons a {
@@ -56,6 +56,7 @@ header .icons a {
     color: #333;
     margin-left: 1rem;
     text-decoration: none;
+    margin-top: 5px;
 }
 
 header .icons a:hover {
@@ -215,4 +216,57 @@ header .icons a:hover {
     margin-top: 20px;
     font-size: 14px;
   }
-  
+@media (max-width: 990px) {
+    header {
+        padding: 20px;
+        flex-direction: column; /* Change l'alignement en colonne */
+        align-items: center;
+    }
+    header .logo {
+        font-size: 15px;
+        text-align: center;
+        padding: 8px;
+    }
+    header .icons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+   .navbar1 {
+         flex-direction: column;
+        align-items: center;
+    }
+    header .navbar1 a {
+        font-size: 14px;
+                color: #333;
+        text-decoration: none;
+    }
+    header .icons a {
+        font-size: 1rem; /* Taille des icônes */
+        color: #333;
+        margin-left: 0;
+    }
+    .navbar1 a {
+        padding: 1rem 0; /* Espacement réduit pour les liens */
+    }
+  .pheading{
+    margin-top: 150px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    margin-bottom: 20px;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-social {
+    justify-content: center;
+}
+}
